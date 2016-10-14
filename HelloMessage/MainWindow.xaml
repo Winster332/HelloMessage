@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:HelloMessage"
 		xmlns:ui="clr-namespace:HelloMessage.GUI"
         mc:Ignorable="d"
-        Title="Hello Message" Height="350" Width="525" Style="{StaticResource MyWindowStyle}">
+        Title="Hello Message" Height="350" Width="550" Style="{StaticResource MyWindowStyle}">
     <Grid>
         <Grid.ColumnDefinitions>
-			<ColumnDefinition Width="150"/>
+			<ColumnDefinition Width="200"/>
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
         <Grid.RowDefinitions>

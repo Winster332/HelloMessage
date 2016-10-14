@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="GUI\ItemMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\ListMessages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +78,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GUI\ItemMessage.xaml.cs">
+      <DependentUpon>ItemMessage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ListMessages.xaml.cs">
       <DependentUpon>ListMessages.xaml</DependentUpon>
     </Compile>
@@ -89,6 +96,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NET\Room.cs" />
+    <Compile Include="NET\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -116,7 +125,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="NET\" />
+    <Folder Include="GUI\Items\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

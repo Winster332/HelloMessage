@@ -5,30 +5,39 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HelloMessage.GUI"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="400">
    
     <Grid Background="#555">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="45"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
-
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Messages" Foreground="White" FontSize="35" VerticalAlignment="Center" Margin="10, 0, 0, 0" />
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Messages" Foreground="White" FontSize="35" VerticalAlignment="Center" Margin="10, 0, 0, 0" />
+            <Button Grid.Column="1" Style="{StaticResource HMButtonStyle}">NEW ROOM</Button>
+            <Button Grid.Column="2" Style="{StaticResource HMButtonStyle}">QUIT ROOM</Button>
+        </Grid>
         <ScrollViewer Template="{StaticResource AppleStyleScrollBarStyle}" Grid.Column="0" Grid.Row="1" Margin="0, 0, -10, 0">
             <StackPanel Name="stackPanel" Orientation="Vertical" Background="#444444">
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="НАЧАЛО"		Tag="begin"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ВВОД"			Tag="input"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ВЫВОД"		Tag="output"		/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="СЧЕТАТЬ"		Tag="calculate"		/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="УСЛОВИЕ"		Tag="condition"		/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ЦИКЛ"			Tag="cycle"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ПОДПРОГРАММА" Tag="subroutine"	/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="КОНЕЦ"		Tag="end"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="СВЯЗЬ"		Tag="joint"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="КАМЕРА"		Tag="camera"		/>
+				
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Test"			Tag="input"			/>
+
             </StackPanel>
         </ScrollViewer>
 		<local:PanelSendMessage Grid.Column="0" Grid.Row="2"/>

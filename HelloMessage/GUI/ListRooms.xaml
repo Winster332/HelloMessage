@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Background="#555555">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="45"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="7"/>
         </Grid.RowDefinitions>
@@ -18,16 +18,12 @@
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Rooms" Foreground="White" FontSize="35" VerticalAlignment="Center" Margin="10, 0, 0, 0"/>
         <ScrollViewer Template="{StaticResource AppleStyleScrollBarStyle}" Grid.Column="0" Grid.Row="1" Margin="0, 0, -10, 0">
             <StackPanel Name="stackPanel" Orientation="Vertical" Background="#444444">
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="НАЧАЛО"		Tag="begin"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ВВОД"			Tag="input"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ВЫВОД"		Tag="output"		/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="СЧЕТАТЬ"		Tag="calculate"		/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="УСЛОВИЕ"		Tag="condition"		/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ЦИКЛ"			Tag="cycle"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="ПОДПРОГРАММА" Tag="subroutine"	/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="КОНЕЦ"		Tag="end"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="СВЯЗЬ"		Tag="joint"			/>
-                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="КАМЕРА"		Tag="camera"		/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Room1"		Tag="condition"		/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Room2"			Tag="cycle"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Room3" Tag="subroutine"	/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Room4"		Tag="end"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Room5"		Tag="joint"			/>
+                <Button Height="40" Style="{StaticResource MoveButtonStyle}" Content="Room6"		Tag="camera"		/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

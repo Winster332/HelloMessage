@@ -17,10 +17,8 @@
         <Grid.ColumnDefinitions>
 			<ColumnDefinition Width="*"/>
 			<ColumnDefinition Width="80"/>
-            <ColumnDefinition Width="80"/>
         </Grid.ColumnDefinitions>
         <TextBox Grid.Column="0" Style="{StaticResource TextBoxStyle}">Enter message...</TextBox>
         <Button Style="{StaticResource HMButtonStyle}" Grid.Column="1">SEND</Button>
-        <Button Style="{StaticResource HMButtonStyle}" Grid.Column="2" Margin="0 0 0 0">NEW ROOM</Button>
     </Grid>
 </UserControl>
