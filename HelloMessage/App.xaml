@@ -20,7 +20,7 @@
         <SolidColorBrush x:Key="BlueColorBrush" Color="{StaticResource BlueColor}"/>
         <SolidColorBrush x:Key="ForegroundColorBrush" Color="{StaticResource ForegroundColor}"/>
 
-        <Style x:Key="LMD_ButtonStyle" TargetType="Button">
+        <Style x:Key="HMButtonStyle" TargetType="Button">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="#0099BB" />
             <Setter Property="Padding" Value="1"/>
